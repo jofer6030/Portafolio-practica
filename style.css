@@ -3,6 +3,8 @@
   --color-bg-input: rgba(196, 196, 196, 0.3);
   --color-parrafo: #594f43;
   --color-blanco: #fff;
+  --fuente-principal: "Work Sans", sans-serif;
+  --fuente-secundaria: "Eczar", serif;
 }
 
 html {
