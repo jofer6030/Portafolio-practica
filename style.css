@@ -19,6 +19,12 @@ html {
   margin: 0;
 }
 
+.container {
+  max-width: 1728px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* i {
   color: #4d5566;
   font-size: 20px;
