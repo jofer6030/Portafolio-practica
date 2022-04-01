@@ -21,14 +21,14 @@
     <title>Portafolio</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="home">
       <header class="header__portafolio">
         <nav class="header__portafolio-navbar">
           <div class="header__portafolio-nav">
             <h3 class="header__portafolio-nav__logo">UIUX Designer</h3>
             <ul class="header__portafolio-nav__items">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Work</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#work">Work</a></li>
               <li><a href="#">Testimonials</a></li>
               <li><a href="#">About</a></li>
             </ul>
@@ -59,6 +59,137 @@
           </div>
         </section>
       </header>
+
+      <section class="featured__work" id="work">
+        <div class="featured__work-title_button">
+          <h2>Featured Work</h2>
+          <button>View more on Behance</button>
+        </div>
+        <article class="featured__work-cards">
+          <div class="featured__work-cards_left">
+            <h3>Sheepify States</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+              amet etiam quis semper sit lacus blandit. Diam nam mi tortor
+              feugiat nunc. Amet enim nisi ac imperdiet nisl, feugiat faucibus
+              amet mi. Volutpat sollicitudin euismod facilisis morbi ullamcorper
+              velit, elementum.
+            </p>
+            <a href="#">Live View</a>
+          </div>
+          <div class="featured__work-cards_right">
+            <img src="./img/card-img1.png" alt="Imagen Card 1" />
+          </div>
+        </article>
+        <article class="featured__work-cards">
+          <div class="featured__work-cards_left">
+            <h3>Interior Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+              amet etiam quis semper sit lacus blandit. Diam nam mi tortor
+              feugiat nunc. Amet enim nisi ac imperdiet nisl.
+            </p>
+            <a href="#">Live View</a>
+          </div>
+          <div class="featured__work-cards_right">
+            <img src="./img/card-img2.png" alt="Imagen Card 2" />
+          </div>
+        </article>
+        <article class="featured__work-cards">
+          <div class="featured__work-cards_left">
+            <h3>IOS UI/UX Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
+              amet etiam quis semper sit lacus blandit. Diam nam mi torto
+            </p>
+            <a href="#">Live View</a>
+          </div>
+          <div class="featured__work-cards_right">
+            <img src="./img/card-img3.png" alt="Imagen Card 3" />
+          </div>
+        </article>
+      </section>
+
+      <section class="section__testimonials">
+        <h2>Some Generous Words</h2>
+        <p>Some of my favorite testimonials from my clients</p>
+        <div class="testimonials">
+          <i class="fa-solid fa-angle-left arrow-left"></i>
+          <i class="fa-solid fa-angle-right arrow-right"></i>
+          <div class="testimonial">
+            <p>
+              I had grown a little bit disappointed when I realized that my work
+              would not be taking me in any new, creative design directions.
+              Thankfully, I found Salman Khan and his creativity that goes above
+              and beyond, proving to be exactly what I needed to take.
+            </p>
+            <span>Aika Chan</span>
+            <div class="testimonial_redes">
+              <i class="fa-brands fa-dribbble"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>
+              I had grown a little bit disappointed when I realized that my work
+              would not be taking me in any new, creative design directions.
+              Thankfully, I found Salman Khan and his creativity that goes above
+              and beyond, proving to be exactly what I needed to take.
+            </p>
+            <span>Aika Chan</span>
+            <div class="testimonial_redes">
+              <i class="fa-brands fa-dribbble"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__about">
+        <div class="about__info">
+          <h2>A Little Bit About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            ipsum, scelerisque proin consequat tristique tortor, amet nullam. Eu
+            purus blandit luctus faucibus justo venenatis a. Auctor vitae sed
+            arcu curabitur tincidunt nibh. Lacinia ornare magnis amet blandit
+            nisl urna tincidunt eget. Urna sed etiam auctor ut netus sed sed.
+            Gravida habitant eu gravida id neque, facilisis.
+          </p>
+          <p>
+            Neque lectus elit massa aenean turpis quam aliquet.Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Quisque ipsum, scelerisque
+            proin consequat tristique tortor, amet nullam. Eu purus blandit
+            luctus faucibus justo venenatis a.
+          </p>
+          <button>Contact Me</button>
+        </div>
+        <div class="about_img"></div>
+      </section>
+
+      <section class="section__contact">
+        <form>
+          <h2>Let’s work together</h2>
+          <div class="campos">
+            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Last name" />
+          </div>
+          <div class="campos dos">
+            <input type="text" placeholder="Subject" />
+            <input type="text" placeholder="Email" />
+          </div>
+          <textarea rows="10" placeholder="Your message"></textarea>
+          <button>Send Message</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>© Copyright ChiranjitH.com</p>
+      </footer>
     </div>
   </body>
 </html>

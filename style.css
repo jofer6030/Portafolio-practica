@@ -36,6 +36,7 @@ h2 {
 }
 
 .header__portafolio {
+  margin-top: 86px;
 }
 
 .header__portafolio-navbar {
@@ -49,9 +50,15 @@ h2 {
 
 @media (min-width: 1100px) {
   .header__portafolio-navbar {
+    position: fixed;
+    max-width: 1728px;
+    width: 100%;
     justify-content: space-between;
     flex-direction: row;
+    margin: 0 auto;
     gap: 0;
+    background-color: #fff;
+    top: 0;
   }
 }
 
@@ -119,6 +126,7 @@ h2 {
 .header__portafolio-section {
   display: flex;
   padding: 54px 132px 115px 122px;
+  gap: 3rem;
 }
 
 .section__portafolio-section_left {
@@ -154,7 +162,7 @@ h2 {
   width: 224px;
   border: none;
   border-radius: 5px;
-  font-weight: 600px;
+  font-weight: 600;
   font-family: inherit;
   display: flex;
   align-items: center;
@@ -165,10 +173,295 @@ h2 {
   color: white;
   background-color: #000;
 }
+.section__portafolio-left_buttons button:last-of-type {
+  color: #4d5566;
+  background-color: transparent;
+  border: 4px solid #000;
+}
 
 .section__portafolio-section_right {
   width: 50%;
+  border-radius: 30px;
+  overflow: hidden;
 }
 .section__portafolio-section_right img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FEATURED WORK */
+.featured__work {
+  padding: 65px 123px 158px 120px;
+  background-color: var(--color-primario);
+}
+
+.featured__work-title_button {
+  display: flex;
+  gap: 61px;
+  align-items: center;
+  margin-bottom: 57px;
+}
+.featured__work-title_button h2 {
+  color: var(--color-blanco);
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+.featured__work-title_button button {
+  color: var(--color-blanco);
+  background-color: transparent;
+  font-family: inherit;
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 302px;
+  width: 100%;
+  border: 4px solid var(--color-blanco);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.featured__work-title_button button:hover {
+  color: var(--color-primario);
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.featured__work-cards {
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 57px;
+}
+
+.featured__work-cards:last-of-type {
+  margin-bottom: 0;
+}
+
+.featured__work-cards_left {
+  width: 60%;
+  padding: 48px 124px 48px 114px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured__work-cards_left h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.featured__work-cards_left p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.featured__work-cards_left a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.featured__work-cards_right {
+  width: 40%;
+}
+
+.featured__work-cards_right img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SECTION TESTIMONIALS */
+.section__testimonials {
+  padding: 118px 229px 185px;
+}
+
+.section__testimonials h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.section__testimonials > p {
+  text-align: center;
+  font-size: 20px;
+  color: #594f43;
+  font-weight: 400;
+  margin-bottom: 130px;
+}
+
+.testimonials {
+  display: flex;
+  gap: 180px;
+  position: relative;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: -150px;
+}
+.arrow-right {
+  right: -150px;
+}
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonial p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 17px;
+}
+
+.testimonial span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.testimonial .testimonial_redes {
+  display: flex;
+  gap: 24px;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+/* SECTION ABOUT */
+.section__about {
+  background-color: #000;
+  color: var(--color-blanco);
+  display: flex;
+}
+
+.about__info {
+  width: 50%;
+  padding: 104px 0 103px 124px;
+}
+
+.about__info h2 {
+  color: var(--color-blanco);
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 42px;
+}
+.about__info p {
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 732px;
+  font-weight: 400;
+}
+
+.about__info p:first-of-type {
+  margin-bottom: 2rem;
+}
+
+.about__info p:last-of-type {
+  margin-bottom: 42px;
+}
+
+.about__info button {
+  color: var(--color-blanco);
+  background-color: transparent;
+  font-family: inherit;
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 302px;
+  width: 100%;
+  border: 4px solid var(--color-blanco);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.about__info button:hover {
+  color: var(--color-primario);
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.about_img {
+  width: 50%;
+  background-image: url("./img/about-me.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* SECTION CONTACT */
+.section__contact {
+  min-height: 1013px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__contact form h2 {
+  font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 43px;
+}
+
+.section__contact .campos {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 34px;
+}
+.section__contact .campos input {
+  width: 50%;
+  border: none;
+  padding: 28px 33px;
+  background-color: rgba(196, 196, 196, 0.3);
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 20px;
+}
+.section__contact textarea {
+  width: 100%;
+  border: none;
+  padding: 28px 33px;
+  background-color: rgba(196, 196, 196, 0.3);
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 20px;
+  margin-bottom: 43px;
+}
+
+.section__contact button {
+  color: #000;
+  padding: 15px 0;
+  max-width: 224px;
+  width: 100%;
+  background-color: #fff;
+  border: 4px solid #000;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 72px 0 85px 0;
+}
+
+footer p {
+  text-align: center;
+  font-size: 20px;
 }
